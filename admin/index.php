@@ -1,7 +1,6 @@
-<?php
-    # read configuration for this site    
-    include "../config.php";    
-    include "../".DIR_SYSTEM."framework.php";
+<?php  
+    # admin bootstrap
+    include "bootstrap.php";    
 ?>
 
 <!DOCTYPE html>
@@ -60,11 +59,14 @@
                                             if ($item=="Author") {$author=$value;}
                                             if ($item=="Author URI") {$authoruri=$value;}
                                             if ($item=="License") {$license=$value;}
+                                            if ($item=="Compatibility") {$compatibility=$value;}
                                         }
                                     }                                
-                                    echo '<tr><td><span style="font-weight:bolder;">'
-                                    .$name.'</span><br/><span style="font-size:0.85em"><a href="">Disable</a> 
-                                        | <a href="">Using instructions</a></span></td><td>'.$desc.'<br/>version: '.$version.' by <a href="'.$authoruri.'">'.$author.'</a> | License: '.$license.'</td></tr>';
+                                    echo '<tr><td><span style="font-weight:bolder;">'.$name.'</span><br/><span style="font-size:0.85em">';
+                                    echo '<a href="'.$path.'settings.php">Settings</a>'; 
+                                    echo ' | ';
+                                    echo '<a href="'.$path.'help.php">Help</a>';
+                                    echo '</span></td><td>'.$desc.'<br/>version: '.$version.' by <a href="'.$authoruri.'">'.$author.'</a> | License: '.$license.'</td></tr>';
                                     include $path.$entry;
                                 }                                
                             }
