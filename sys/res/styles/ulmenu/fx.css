@@ -1,0 +1,68 @@
+/* 
+    Document   : fx
+    Created on : 29/05/2012, 10:15:34
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ul ul {    
+    opacity : 0;
+    font-size:70%;
+    transition-property : opacity; 
+    -moz-transition-property : opacity; /* FireFox */
+    -webkit-transition-property : opacity; /* Safari / Chrome */
+    -o-transition-property : opacity; /* Opera */
+    transition-duration : 0.7s; 
+    -moz-transition-duration : 0.7s; /* FireFox */
+    -webkit-transition-duration : 0.7s; /* Safari / Chrome */
+    -o-transition-duration : 0.7s; /* Opera */
+}
+
+.mainli {   
+    top: 0;
+    opacity : .6;    
+    transition-property : opacity, top; 
+    -moz-transition-property : opacity, top; /* FireFox */
+    -webkit-transition-property : opacity, top; /* Safari / Chrome */
+    -o-transition-property : opacity, top; /* Opera */
+    transition-duration : 0.3s; 
+    -moz-transition-duration : 0.3s; /* FireFox */
+    -webkit-transition-duration : 0.3s; /* Safari / Chrome */
+    -o-transition-duration : 0.3s; /* Opera */
+}
+
+.mainli:hover {
+    top: 5;    
+    opacity : 1;
+    transition-property : opacity, top; 
+    -moz-transition-property : opacity, top; /* FireFox */
+    -webkit-transition-property : opacity, top; /* Safari / Chrome */
+    -o-transition-property : opacity, top; /* Opera */
+    transition-duration : 0.3s; 
+    -moz-transition-duration : 0.3s; /* FireFox */
+    -webkit-transition-duration : 0.3s; /* Safari / Chrome */
+    -o-transition-duration : 0.3s; /* Opera */
+}
+
+.mainli:hover ul {
+    opacity : 1;
+    font-size: 100%;
+    transition-property : opacity, font-size; 
+    -moz-transition-property : opacity, font-size; /* FireFox */
+    -webkit-transition-property : opacity, font-size; /* Safari / Chrome */
+    -o-transition-property : opacity, font-size; /* Opera */
+    transition-duration : 0.3s; 
+    -moz-transition-duration : 0.3s; /* FireFox */
+    -webkit-transition-duration : 0.3s; /* Safari / Chrome */
+    -o-transition-duration : 0.3s; /* Opera */
+}
+
+#ie ul ul { 
+    visibility : hidden; 
+}
+
+#ie .mainli:hover ul,
+#ie6 ul ul { 
+    visibility : visible; 
+}

@@ -1,0 +1,16 @@
+/* 
+    Document   : defaultfx
+    Created on : 29/05/2012, 12:40:18
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ul ul
+{
+    display:none; 
+}
+
+.mainli:hover ul {
+    display:block;
+}
