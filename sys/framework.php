@@ -10,5 +10,7 @@
     }
     
     define("frameworkName", "BR Framework");
+    define("frameworkVersion", "0.01");
+    define("frameworkCopyrightYear", "2012");
     
 ?>

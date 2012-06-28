@@ -1,6 +1,12 @@
 <?php
     # read configuration for this site
-    include "../config.php";
+    $config = "../config.php";
+    if (file_exists($config)) {
+        include $config;
+    } else {
+        header("Location: install.php");
+        exit;
+    }    
 ?>
 
 <!DOCTYPE html>
