@@ -16,8 +16,8 @@
             <?php 
                 session_start();
                 if ($_SESSION['loggedin'] != 1) {
-                    header("Location: login.php");
-                    exit;
+                   header("Location: login.php");
+                   exit;
                 }
             ?>
         <nav>
