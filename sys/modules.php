@@ -1,6 +1,6 @@
 <?php
     $pluginpath = '';
-    function includeModules($path, $level) {
+    function includeModules($path, $level) {        
         global $pluginpath;        
         if ($handle = opendir($path)) {
             /* loop over the directory. */
@@ -18,6 +18,7 @@
                         if (strpos($part, "Plugin Name:")) {
                             $pluginpath = $path;
                             include $path.$entry;
+                            #echo $entry.' loaded.';
                         }                                
                     }
                 }
@@ -26,10 +27,25 @@
             $pluginpath = '';
         }
     }
-    if (is_dir(DIR_SYSTEM_MODULES)) {
-        includeModules(DIR_SYSTEM_MODULES, 1);
+    
+    #if (is_dir('res/modules')) echo 'yes!';        
+    #if (is_dir('../sys/modules')) echo 'yes!';
+    
+    $root = '../';
+    
+    if (is_dir($root.DIR_SYSTEM_MODULES)) {
+        #echo DIR_SYSTEM_MODULES;
+        includeModules($root.DIR_SYSTEM_MODULES, 1);
     }
-    if (is_dir(DIR_MODULES)) {
-        includeModules(DIR_MODULES, 1);
+    
+    if (is_dir($root.DIR_MODULES)) {
+        #echo DIR_MODULES;
+        includeModules($root.DIR_MODULES, 1);
     }
+    
+    if (is_dir(DIR_PUBLIC_MODULES)) {
+        #echo DIR_PUBLIC_MODULES;
+        includeModules(DIR_PUBLIC_MODULES, 1);
+    }
+    
 ?>
