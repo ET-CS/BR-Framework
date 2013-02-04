@@ -1,0 +1,4 @@
+/var/modules/
+/sys/modules/
+/public/
+config.php
