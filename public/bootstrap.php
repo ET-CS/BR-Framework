@@ -6,5 +6,5 @@
     # load framework
     include config_dir.DIR_SYSTEM."framework.php";
     # load modules engine
-    include config_dir.DIR_SYSTEM."modules.php";    
+    include config_dir.DIR_SYSTEM."modules.php";
 ?>
