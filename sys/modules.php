@@ -1,4 +1,7 @@
 <?php
+
+    /* TODO add option/module to cache modules (For timelapse/until renew/etc)  */
+
     $pluginpath = '';
     function includeModules($path, $level) {        
         global $pluginpath;        
@@ -49,3 +52,10 @@
     }
     
 ?>
+<?php
+    /* Check if module is loaded 
+       Used to check if module loaded before using */
+    function ModuleLoaded($name) {
+	/* to implement */
+    }
+ ?>

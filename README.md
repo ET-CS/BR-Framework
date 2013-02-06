@@ -1,13 +1,15 @@
 BR-Framework
 ============
 
-If you decided to code your site with PHP and you prefer coding and not using built-in CMS,
-you would love BR-Framework!
-Very small framework, helps you manage pieces of code into re-usable modules.
-PHP Framework to manage your code as plug & play modules with admin panel
-for easy maintaince of your modules.
-no modules provided with this base framework.
+If you've decided to code your website with PHP, and not using any CMS,
+then you would love BR-Framework!
+BR-Framework is more a module manager for php then a framework. Fully customized, 
 
-for help tour the wiki @ https://github.com/ET-CS/BR-Framework/wiki/Home/
+Very small foot-print, with focus on security, performance and maintainability, 
+BR Framework help you manage pieces of code into re-usable plug & play modules with admin panel support for easy maintaince of your modules.
+BR-Framework could be the base of any PHP web application/framework/cms.
+No modules provided in this repository.
 
-you can watch a demo site created based on BR-Framework @ http://etcs.me/
+    for help tour the wiki @ https://github.com/ET-CS/BR-Framework/wiki/Home/
+
+You can visit my site created with BR-Framework @ http://etcs.me/
