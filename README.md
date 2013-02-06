@@ -11,7 +11,8 @@ BR Framework help you manage pieces of code into re-usable plug & play modules w
 BR-Framework could be the base of any PHP web application/framework/cms.
 No modules provided in this repository.
 
-For Demo Visit [my site][ETCS] created with BR-Framework @ [http://etcs.me/][ETCS]
+For demo visit [my site][ETCS] created with BR-Framework @ [http://etcs.me/][ETCS]
+But remember.. BR-Framework is not about visual design - but code design ;)
 
 ### More info
 Tour the wiki @ https://github.com/ET-CS/BR-Framework/wiki/Home/
