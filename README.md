@@ -1,6 +1,7 @@
 BR-Framework
 ============
 
+### What BR-Framework good for
 If you've decided to code your website with PHP, and not using any CMS,
 then you would love BR-Framework!
 BR-Framework is more a module manager for php then a framework. Fully customized, 
@@ -10,6 +11,7 @@ BR Framework help you manage pieces of code into re-usable plug & play modules w
 BR-Framework could be the base of any PHP web application/framework/cms.
 No modules provided in this repository.
 
-    for help tour the wiki @ https://github.com/ET-CS/BR-Framework/wiki/Home/
+### More info
+for help tour the wiki @ https://github.com/ET-CS/BR-Framework/wiki/Home/
 
 You can visit my site created with BR-Framework @ http://etcs.me/
