@@ -1,0 +1,3 @@
+The var directory is meant for application specific data. 
+you should fill it with your modules and it will not be updated when BR-Framework is updated. 
+you can move the public and var directories to newer BR-Framework version and it should work.
